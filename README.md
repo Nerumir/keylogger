@@ -17,6 +17,10 @@ Il y a plusieurs fichiers dans ce dépôt, veuillez noter qu'ils sont tous indé
 
 ## Flux binaire
 
+
+> [!NOTE]
+> Au début, le `keylogger` fonctionnait uniquement en écoutant `stdin`, cependant, si je perds le `focus` et que je fais autre chose, alors il ne pourrait pas sniffer les touches, ce qui fait qu'il perd totalement son utilité en tant que `keylogger`. C'est pour cela qu'il faut le faire fonctionner de manière globale. Pour cela, j'ai essayé d'utiliser la fonction `XNextEvent` du serveur graphique `X11`, cependant, c'était plus délicat et surtout moins satisfaisant puisqu'il n'aurait pas fonctionné sous `Wayland`.. J'ai donc essayé d'exploiter directement le flux binaire du driver de clavier et cette solution fût concluante.
+
 Il est possible de visualiser le flux binaire de votre driver de clavier en consultant le fichier correspondant à celui-ci avec la commande `cat` par exemple. Cependant, cela ne ressemble à rien, c'est pour cela que j'utilise l'utilitaire `hexdump` :
 
 ```bash
