@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ceci est un `keylogger` fait en assembleur et qui fonctionne sur les machines linux. Il utilise directement le driver du clavier pour sniffer les pressions de touches en enregistrant directement le flux binaire du driver dans un fichier. Il est bien évidemment fournit avec le keylogger un script Python permettant d'interpéter le flux binaire. Vous trouverez un peu plus bas, toutes les informations et explications concernant ce projet. J'ai bien entendu commenté le code pour qu'il soit le plus clair et lisible possible.
+Ceci est un PoC de `keylogger` fait en assembleur et qui fonctionne sur les machines linux. Il utilise directement le driver du clavier pour sniffer les pressions de touches en enregistrant directement le flux binaire du driver dans un fichier. Il est bien évidemment fournit avec le keylogger un script Python permettant d'interpéter le flux binaire. Vous trouverez un peu plus bas, toutes les informations et explications concernant ce projet. J'ai bien entendu commenté le code pour qu'il soit le plus clair et lisible possible.
 
 ## Les fichiers
 
