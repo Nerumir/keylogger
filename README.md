@@ -41,11 +41,11 @@ Alors je me suis retrouvé avec cela :
 
 ![Interprétation du flux binaire](real_stream.png)
 
-On remarque alors que la commande `cat` a ajouté des `null bytes` un peu partout. Notre résultat est alors plus propre et plus facilement interprétable que ce que je pensais. J'ai créé le script `read_stream.py` afin de pouvoir automatiser le processus d'intérprétation du flux. J'ai dû créer manuellement la table d'association des octets avec les touches du clavier :
+On remarque alors que la commande `cat` a ajouté des `null bytes` un peu partout. Notre résultat est alors plus propre et plus facilement interprétable que ce que je pensais. En effet, chaque ligne commence avec le timestamp sur les 4 premiers octets et représente une action. J'ai créé le script `read_stream.py` afin de pouvoir automatiser le processus d'intérprétation du flux. J'ai dû créer manuellement la table d'association des octets avec les touches du clavier :
 
 ![Interprétation du flux binaire](Pasted%20image%2020240715005802.png)
 
-Cependant, ces tables existent sûrement sur internet et dépendent de la version du noyau linux de la machine, c'est pour cela que dans un cas d'utilisation réelle de ce `keylogger`, il serait pertinent non seulement d'ajouter une communication avec internet de ce fichier de flux, mais également de prendre l'emprunte de la version du noyau de la machine victime. Notons que ce `keylogger` fonctionne indépendamment du serveur graphique utilisé (X11 ou Wayland) puisqu'il se repose exclusivement sur le driver clavier installé avec le noyau. Voici ce que `read_stream.py` nous renvoit avec mon échantillon :
+Cependant, ces tables existent sûrement sur internet et dépendent de la version du noyau linux de la machine, c'est pour cela que dans un cas d'utilisation réel de ce `keylogger`, il serait pertinent non seulement d'ajouter une communication avec internet pour transférer ce fichier de flux sur un serveur distant, mais également de prendre l'empreinte de la version du noyau de la machine victime. Notons que ce `keylogger` fonctionne indépendamment du serveur graphique utilisé (X11 ou Wayland) puisqu'il se repose exclusivement sur le driver clavier installé avec le noyau. Voici ce que `read_stream.py` nous renvoit avec mon échantillon :
 
 ```
 2024-07-14 17:46:52 : s
