@@ -41,7 +41,7 @@ Alors je me suis retrouvé avec cela :
 
 ![Interprétation du flux binaire](real_stream.png)
 
-On remarque alors que la commande `cat` a ajouté des `null bytes` un peu partout. Notre résultat est alors plus proprement et plus facilement interprétable que ce que je pensais. J'ai créé le script `read_stream.py` afin de pouvoir automatiser le processus d'intérprétation du flux. J'ai dû créer manuellement la table d'association des octets avec les touches du clavier :
+On remarque alors que la commande `cat` a ajouté des `null bytes` un peu partout. Notre résultat est alors plus propre et plus facilement interprétable que ce que je pensais. J'ai créé le script `read_stream.py` afin de pouvoir automatiser le processus d'intérprétation du flux. J'ai dû créer manuellement la table d'association des octets avec les touches du clavier :
 
 ![Interprétation du flux binaire](Pasted%20image%2020240715005802.png)
 
