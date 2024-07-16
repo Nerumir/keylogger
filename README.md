@@ -101,7 +101,7 @@ Cependant, ces tables existent sûrement sur internet et dépendent de la versio
 2024-07-14 17:46:56 : e
 2024-07-14 17:46:56 :  
 2024-07-14 17:47:00 : c
-sasalluutt j je e mme e pprrssnneenntet e heheheh e c
+salut je me prsente hehec
 ```
 
-J'ai écrit durant le test : `salut je me présente hehe`. L'accent n'a pas été rentré dans la table d'association et le dernier `c` est celui de l'interruption du programme `^C`. Les espaces sont dans la table d'association donc ils fonctionnent. Reste un seul problème, les répétitions des lettres. Ce problème se résout en supprimant la prochaine occurence de chaque touche pour ignorer le relâchement de la touche et considérer uniquement sa pression. Cependant, cela reste un `keylogger` fonctionnel qui enregistre correctement toutes les pressions de touches, il suffit juste de compléter correctement la table d'association.
+J'ai écrit durant le test : `salut je me présente hehe`. L'accent n'a pas été rentré dans la table d'association et le dernier `c` est celui de l'interruption du programme `^C`. Les espaces sont dans la table d'association donc ils fonctionnent.  Cependant, cela reste un `keylogger` fonctionnel qui enregistre correctement toutes les pressions de touches, il suffit juste de compléter correctement la table d'association.
