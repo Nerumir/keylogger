@@ -2,6 +2,19 @@ import datetime
 import warnings
 warnings.filterwarnings("ignore")
 
+# On ne prend en compte que les pressions de touche et non les relâchements
+def remove_released(sentence):
+    temp = {}
+    res = ''
+    for char in sentence:
+        # Si la touche a été pressée avant
+        if(char in temp and temp[char]):
+            temp[char] = False
+        else:
+            res += char
+            temp[char] = True
+    return res
+
 # Non du fichier du flux binaire
 file = "stream"
 
@@ -38,4 +51,4 @@ for elem in tab:
             print(f"{pretty_date} : {key}")
         except Exception:
             pass
-print(full_sentence)
+print(remove_released(full_sentence))
