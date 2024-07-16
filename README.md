@@ -8,7 +8,7 @@ Ceci est un PoC de `keylogger` fait en assembleur et qui fonctionne sur les mach
 
 Il y a plusieurs fichiers dans ce dépôt, veuillez noter qu'ils sont tous indépendants, ils représentent simplement l'isolation de certaines fonctionnalités du programme final qui est `global_main.asm`, ils ne sont en aucun cas des fichiers secondaires appelés par le programme principal :
 
-- `write_file.asm` : Programme permettant de lire le contenu d'un fichier.
+- `write_file.asm` : Programme permettant de écrire le contenu d'un fichier.
 - `main.asm` : Le keylogger mais qui lit les touches à partir de `stdin`, ce fichier représente le squelette du programme final.
 - `capture_driver_stream.asm` : Programme permettant de lire correctement le flux binaire du fichier `/dev/input/event3` qui est celui de mon driver clavier.
 - `global_main.asm` : Le keylogger final qui lit le flux binaire et qui l'écrit dans un fichier de notre choix.
